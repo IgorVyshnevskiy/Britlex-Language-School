@@ -4,26 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Britlex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Britlex</title>
   </head>
   <body>
     <header>
-      <a href="" class="logo"></a>
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li class="nav-item">Home</li>
-          <li class="nav-item">Skills</li>
-          <li class="nav-item">About Us</li>
-          <li class="nav-item">Pricing</li>
-          <li class="nav-item">Contacts</li>
-        </ul>
+      <div class="header-container container">
+        <a href="./index.html" class="logo"
+          >Brit<span class="logo-span">lex</span></a
+        >
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#about-us">About Us</a></li>
+            <li class="nav-item"><a href="#pricing">Pricing</a></li>
+            <li class="nav-item"><a href="#contact-us">Contacts</a></li>
+          </ul>
+        </nav>
         <button class="nav-btn">Let's Talk</button>
-      </nav>
+      </div>
     </header>
     <main>
       <section class="hero-section">
-        <div class="container">
+        <div id="hero" class="container">
           <div class="hero-content">
             <h1 class="hero-title">Learn Any Foreign Language</h1>
             <p class="hero-paragraph">
@@ -43,9 +53,9 @@
           />
         </div>
       </section>
-      <section class="section">
+      <section id="skills" class="section">
         <div class="container">
-          <h2 class="title"></h2>
+          <h2 class="title">Skills</h2>
           <ul class="skills-list">
             <li class="skills-item">
               <img
@@ -134,10 +144,10 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section id="about-us" class="section">
         <div class="container">
           <div>
-            <h2>About Us</h2>
+            <h2 class="title">About Us</h2>
             <p>
               The model offers a framework for discussing problems related to
               the user's experience, as well as possible ways and means of
@@ -172,9 +182,9 @@
           />
         </div>
       </section>
-      <section class="section">
+      <section id="pricing" class="section">
         <div class="container">
-          <h2>Pricing</h2>
+          <h2 class="title">Pricing</h2>
           <ul>
             <li>
               <img
@@ -236,7 +246,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section id="contact-us" class="section">
         <div class="container">
           <img
             srcset="
@@ -248,7 +258,7 @@
             alt="contact us"
           />
           <div>
-            <h2></h2>
+            <h2 class="title">Contact Us</h2>
             <p></p>
             <form>
               <input type="email" placeholder="Enter Your E-mail" />

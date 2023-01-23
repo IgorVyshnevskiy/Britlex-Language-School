@@ -83,4 +83,67 @@ h5,
 h6 {
   font-style: inherit;
   font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1338px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.header-container .logo {
+  font-size: 36px;
+  line-height: 1.5;
+  color: #000;
+  margin-right: 236px;
+}
+.header-container .logo-span {
+  color: #939393;
+}
+.header-container .nav-list {
+  display: flex;
+  align-items: center;
+}
+.header-container .nav-list .nav-item > a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #263238;
+  margin-right: 50px;
+}
+.header-container .nav-list .nav-item > a:hover, .header-container .nav-list .nav-item > a:focus {
+  color: #8F95A5;
+}
+.header-container .nav-list .nav-item:last-child {
+  margin-right: 0;
+}
+.header-container .nav-btn {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  background-color: #fff;
+  padding: 20px 112px;
+  border: 2px solid #263238;
+  border-radius: 10px;
+  margin-left: auto;
+}
+.header-container .nav-btn:hover, .header-container .nav-btn:active {
+  color: #fff;
+  background-color: #263238;
 }/*# sourceMappingURL=main.css.map */
