@@ -1,4 +1,4 @@
-// COLORS //
+//---COLORS---//
 
 $black-color:#000;
 $dark-color:#263238;
@@ -10,4 +10,14 @@ $light-grey-color:#EEEEEE;
 $text-color:#8F95A5;
 $white-color:#fff;
 
+//---AIMATIONS---//
 
+$animation:250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//---Mix
+
+@mixin fonts($fw, $fz, $lh, ) {
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+}

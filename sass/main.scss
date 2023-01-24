@@ -10,12 +10,14 @@ body {
 }
 
 .container {
-  max-width: 1338px;
+  max-width: 1368px;
   padding-left: 15px;
   padding-right: 15px;  
   margin-left: auto;
   margin-right: auto;
 }
+
+//-----HEADER-----//
 
 .header-container {
   display: flex;
@@ -25,8 +27,7 @@ body {
   padding-bottom: 55px;
 
   .logo {
-    font-size: 36px;
-    line-height: 1.5;
+    @include fonts(400, 36px, 1.5);
     color: $black-color;
 
     margin-right: 236px;
@@ -41,11 +42,10 @@ body {
     align-items: center;
 
     .nav-item > a {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.5;
+      @include fonts(500, 20px, 1.5);
       color: $dark-color;
       margin-right: 50px;
+      transition: color $animation;
 
       &:hover,
       &:focus {
@@ -59,8 +59,7 @@ body {
   }
 
   .nav-btn {
-    font-size: 20px;
-    line-height: 1.5;
+    @include fonts(400, 20px, 1.5);
     letter-spacing: 0.03em;
 
     background-color: $white-color;
@@ -68,6 +67,7 @@ body {
     border: 2px solid $dark-color;
     border-radius: 10px;
     margin-left: auto;
+    transition: color $animation, background-color $animation;
 
     &:hover,
     &:active {
@@ -76,3 +76,72 @@ body {
     }
   }
 }
+
+//-----HERO-----//
+
+.hero-section {
+  padding-bottom: 180px;
+}
+
+.title {
+  @include fonts(600, 48px, 1.5);
+  color: $black-color;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content {
+  max-width: 540px;
+
+  .hero-title {
+    @include fonts(600, 64px, 1.25);
+    margin-bottom: 40px;
+  }
+
+  .hero-paragraph {
+    @include fonts(400, 24px, 1.5);
+    color: $text-color;
+    margin-bottom: 60px;
+  }
+
+  .hero-btn{
+    @include fonts(400, 36px, 1.5);
+    letter-spacing: 0.03em;
+    color: $white-color;
+
+    background-color: $dark-color;
+    padding: 23px 110px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    transition: color $animation, background-color $animation;
+
+    &:hover, &:focus {
+      color: $dark-color;
+      background-color: $white-color;
+      border: 2px solid $dark-color;
+    }
+  }
+}
+
+//-----SKILLS-----//
+
+.skills-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-item{
+
+  background-color: $grey-color;
+  padding: 32px 18px;
+  border-radius: 10px;
+  
+}
+
+
