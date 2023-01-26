@@ -105,6 +105,11 @@ body {
   padding-bottom: 180px;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -167,11 +172,6 @@ body {
   color: #000;
   text-align: center;
   margin-bottom: 60px;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
 }
 
 .hero-content {
@@ -261,4 +261,71 @@ body {
   color: #263238;
   background-color: #F5F5F5;
   border: 2px solid #263238;
+}
+
+.about-container {
+  margin-right: 146px;
+}
+.about-container .left {
+  text-align: left;
+}
+.about-container .about-paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #8F95A5;
+  margin-bottom: 30px;
+}
+.about-container .about-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about-container .about-list .item-paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #8F95A5;
+  text-align: center;
+}
+.about-container .about-list .item-span {
+  display: block;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+  color: #263238;
+  margin-bottom: 20px;
+}
+
+.pricing-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pricing-list .pricing-item {
+  width: calc((100% - 60px) / 3);
+  text-align: center;
+  margin-right: 30px;
+}
+.pricing-list .pricing-item:last-child {
+  margin-right: 0;
+}
+.pricing-list .pricing-image {
+  margin-bottom: 20px;
+}
+.pricing-list .pricing-image:nth-child(2) {
+  margin-bottom: 64px;
+}
+.pricing-list .price-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.6;
+  color: #263238;
+  margin-bottom: 20px;
+}
+.pricing-list .price-paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  color: #8F95A5;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */
