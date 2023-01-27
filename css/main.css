@@ -72,7 +72,7 @@ ul li {
 }
 
 img {
-  vertical-align: top;
+  display: block;
 }
 
 h1,
@@ -110,21 +110,23 @@ body {
   justify-content: space-between;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  padding-top: 55px;
-  padding-bottom: 55px;
-}
-.header-container .logo {
+.logo {
   font-weight: 400;
   font-size: 36px;
   line-height: 1.5;
   color: #000;
   margin-right: 236px;
 }
-.header-container .logo-span {
+
+.logo-span {
   color: #939393;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 .header-container .nav-list {
   display: flex;
@@ -311,21 +313,129 @@ body {
 .pricing-list .pricing-image {
   margin-bottom: 20px;
 }
-.pricing-list .pricing-image:nth-child(2) {
-  margin-bottom: 64px;
+.pricing-list .pricing-second {
+  margin-bottom: 54px;
 }
-.pricing-list .price-title {
+.pricing-list .price-block {
+  text-align: left;
+}
+.pricing-list .price-block .price-title {
   font-weight: 600;
   font-size: 30px;
   line-height: 1.6;
   color: #263238;
   margin-bottom: 20px;
 }
-.pricing-list .price-paragraph {
+.pricing-list .price-block .price-paragraph {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   text-align: left;
   color: #8F95A5;
   margin-bottom: 30px;
+}
+.pricing-list .price-block .price-tag {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  display: inline-block;
+  color: #546269;
+  background-color: #EEEEEE;
+  border-radius: 10px;
+  padding: 5px 23px 4px 30px;
+}
+.pricing-list .price-block .price-span {
+  font-size: 24px;
+  color: #263238;
+  margin-right: 28px;
+}
+
+.contact-container {
+  display: flex;
+  padding-bottom: 97px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.contact-container .contact-image {
+  margin-right: 164px;
+}
+.contact-container .contact-block {
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.contact-container .contact-block .contact-paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 654px;
+  color: #8F95A5;
+  margin-bottom: 30px;
+}
+.contact-container .contact-block .contact-form {
+  width: 100%;
+}
+.contact-container .contact-block .contact-form .contact-input {
+  display: inline-block;
+  min-width: 425px;
+  background-color: inherit;
+  padding: 20px 30px;
+  border: 1px solid #8F95A5;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.contact-container .contact-block .contact-form .contact-input::-moz-placeholder {
+  color: #8F95A5;
+  line-height: 1.4;
+}
+.contact-container .contact-block .contact-form .contact-input:-ms-input-placeholder {
+  color: #8F95A5;
+  line-height: 1.4;
+}
+.contact-container .contact-block .contact-form .contact-input::placeholder {
+  color: #8F95A5;
+  line-height: 1.4;
+}
+.contact-container .contact-block .contact-form .contact-btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #263238;
+  padding: 14px 100px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-container .contact-block .contact-form .contact-btn:hover, .contact-container .contact-block .contact-form .contact-btn:focus {
+  color: #263238;
+  background-color: #F5F5F5;
+  border: 2px solid #263238;
+}
+
+.footer-container {
+  display: flex;
+  padding-top: 31px;
+  padding-bottom: 77px;
+}
+.footer-container .footer-nav {
+  margin-left: auto;
+}
+.footer-container .footer-nav .footer-list {
+  display: flex;
+}
+.footer-container .footer-nav .footer-list .footer-item {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  margin-right: 80px;
+}
+.footer-container .footer-nav .footer-list .footer-item:last-child {
+  margin-right: 0;
+}
+.footer-container .footer-nav .footer-list .footer-item .footer-link {
+  color: #8F95A5;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-container .footer-nav .footer-list .footer-item .footer-link:hover, .footer-container .footer-nav .footer-list .footer-item .footer-link:focus {
+  color: #263238;
 }/*# sourceMappingURL=main.css.map */
